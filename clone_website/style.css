@@ -1,0 +1,714 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    color: white;
+    overflow-x: hidden;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+}
+
+header
+{
+    height: 1027px;
+    width: 66%;
+    margin-left: 1.3%;
+    background-color: rgb(33, 25, 58);
+    margin-bottom: 1.2%;
+}
+
+.logo
+{
+    font-size: 1.5em;
+    font-weight: 900;
+    width: 0;
+    margin-left: 3%;
+    margin-top: -3.5%;
+    cursor: pointer;
+}
+
+.container
+{
+    width: 90%;
+    position: relative;
+    top: 8%;
+}
+
+ul
+{
+    display: flex;
+    margin-left: 16.5%;
+    margin-top: -4.5%;
+    cursor: pointer;
+    height: 0;
+}
+
+ul li
+{
+    list-style: none;
+    padding: 2.5% 3% 2.5% 3%;
+    height: 45px;
+    position: relative;
+    top: -51px;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    font-weight: 900;
+    position: relative;
+    top: 35px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+ul li:hover, .active
+{
+    background-color: orangered;
+    transition: .8s;
+}
+
+.icon
+{
+
+    height: 40px;
+    width: 35px;
+    margin-left: 100%;
+    cursor: pointer;
+    margin-top: -1%;
+}
+
+
+.aside
+{
+    top: -.5%;
+    background-color: orangered;
+    position: absolute;
+    width: 32.7%;
+    left: 67.3%;
+    height: 1000px;
+}
+
+.first-par
+{
+    position: relative;
+    top: 5%;
+    left: 20%;
+    width: 0;
+}
+
+.second-par
+{
+    position: relative;
+    top: 3%;
+    left: 50%;
+    width: 0;
+}
+
+.coffee-par
+{
+    /* background-color: beige; */
+    width: 50%;
+    font-size: 4em;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 900;
+    position: relative;
+    top: 20%;
+    left: 15%;
+    /* transform: translateX(-150%); */
+}
+
+.coffee-par.active-par
+{
+    background-color: transparent;
+}
+
+.coffee
+{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 45%;
+    filter: drop-shadow(36px 26px 50px black);
+    transform: translateX(150%);
+    /* transition: transform 2s ease-out; */
+}
+
+.coffee.active
+{
+    background-color: transparent;
+}
+
+.coffee-des
+{
+    width: 30%;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 2em;
+    position: relative;
+    top: 20%;
+    left: 17%;
+}
+
+.btn-1
+{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 91%;
+    padding: 2% 2.5%;
+    left: 12%;
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+
+.btn-2
+{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 91%;
+    padding: 2% 2.5%;
+    left: 25%;
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+
+.btn-1:hover
+{
+    background-color: black;
+    transition: 1s;
+}
+
+.btn-2:hover
+{
+    background-color: black;
+    transition: 1s;
+}
+
+nav
+{
+    background-color: rgb(33, 25, 58);
+    height: 1000px;
+    width: 99%;
+    margin-bottom: 1.2%;
+}
+
+.about-img
+{
+    /* background-color: antiquewhite; */
+    width: 45%;
+    height: 95%;
+    margin-left: 10%;
+}
+
+.about-img>img
+{
+    height: 95%;
+    width: 80%;
+    filter: contrast(1.1);
+}
+
+.about-cof
+{
+    position: relative;
+    left: 52%;
+    top: -64%;
+    width: 35%;
+    font-size: 2em;
+    font-weight: 900;
+    /* background-color: antiquewhite; */
+}
+
+.about-con
+{
+    position: relative;
+    left: 52%;
+    top: -60%;
+    width: 38%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    word-spacing: .2em;
+}
+
+.btn-3
+{
+    position: relative;
+    left: 52%;
+    top: -55%;
+    padding: 1.5%3.5%;
+    background-color: rgb(255, 51, 0);
+    color: white;
+    border: none;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.btn-3:hover
+{
+    background-color: black;
+    transition: 1.5s;
+}
+
+.aside-service
+{
+    background-color: rgb(33, 25, 58);
+    height: 1000px;
+    width: 99%;
+    margin-bottom: 1.2%;
+    margin-left: 1%;
+    height: 150vh;
+    margin-bottom: 1.2%;
+}
+
+.coff-serv
+{
+    position: relative;
+    left: 40%;
+    font-size: 2.5em;
+    top: 5%;
+}
+
+.coff-p
+{
+    position: relative;
+    left: 15%;
+    font-size: 1.3em;
+    top: 7%;
+}
+
+.service-container
+{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    position: relative;
+    top: 10%;
+    /* width: 95%; */
+    /* left: 2.5%; */
+}
+
+.ser-img-one
+{
+    width: 30%;
+    /* background-color: red; */
+    position: relative;
+    left: -4.3%;
+}
+
+.ser-one
+{
+    width: 68%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    padding: 8%;
+    border-radius: 2%;
+    height: 45vh;
+}
+
+.ser-one-h1
+{
+    position: relative;
+    top: 15%;
+    left: 45%;
+}
+
+.ser-one-p
+{
+    position: relative;
+    top: 18%;
+    left: 25%;
+}
+
+.ser-one-p2
+{
+    position: relative;
+    top: 18%;
+    left: 55%;
+}
+
+.ser-img-two
+{
+    width: 30%;
+    /* background-color: red; */
+    position: relative;
+    left: -1.6%;
+}
+
+.ser-two
+{
+    width: 90%;
+    background-color: orangered;
+    padding: 10%;
+    position: relative;
+    top: 2%;
+    /* left: 5%; */
+    border-radius: 5%;
+    height: 55vh;
+}
+
+.ser-two-h1
+{
+    position: relative;
+    top: 3%;
+    left: 35%;
+}
+
+.ser-two-p
+{
+    position: relative;
+    top: 5%;
+    left: 15%;
+}
+
+.ser-two-p2
+{
+    position: relative;
+    top: 5%;
+    left: 45%;
+}
+
+.ser-img-three
+{
+    width: 30%;
+    /* background-color: red; */
+    position: relative;
+    left: -4.3%;
+}
+
+.ser-three
+{
+    width: 68%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    padding: 8%;
+    border-radius: 2%;
+    height: 45vh;
+}
+
+.ser-three-h1
+{
+    position: relative;
+    top: 15%;
+    left: 45%;
+}
+
+.ser-three-p
+{
+    position: relative;
+    top: 18%;
+    left: 25%;
+}
+
+.ser-three-p2
+{
+    position: relative;
+    top: 18%;
+    left: 55%;
+}
+
+.side-tab-ser
+{
+    position: relative;
+    top: 15%;
+    width: 6%;
+    /* left: -.1%; */
+    border: none;
+    margin-top: .5%;
+    padding: 2%;
+    background-color: white;
+}
+
+.side-tab-ser:hover
+{
+   cursor: pointer;
+}
+
+.book
+{
+    padding: 1.5%;
+    background-color: orangered;
+    border: none;
+    position: relative;
+    top: 20%;
+    left: 37%;
+    width: 15%;
+}
+
+.book>h3
+{
+    color: white;
+}
+
+.book:hover
+{
+    background-color: black;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+
+/* service image2 */
+.ser-active2
+{
+    background-color: white;
+    width: 68%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    /* background-color: white; */
+    padding: 8%;
+    border-radius: 2%;
+    height: 45vh;
+    transform: translateX(130%);
+    z-index: 5;
+}
+
+.ser-active-par2
+{
+    position: relative;
+    top: 15%;
+    transform: translateX(120%);
+    z-index: 5;
+}
+
+/* service image1 */
+.ser-active1
+{
+    background-color: orangered;
+    width: 90%;
+    position: relative;
+    top: 2%;
+    /* left: 20%; */
+    /* background-color: white; */
+    padding: 8%;
+    border-radius: 2%;
+    height: 55vh;
+    transform: translateX(100%);
+    z-index: 5;
+}
+
+.ser-active-par1
+{
+    position: relative;
+    top: 5%;
+    /* left: 30%; */
+    transform: translateX(120%);
+    z-index: 5;
+}
+
+.ser-active3
+{
+    background-color: white;
+    width: 68%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    /* background-color: white; */
+    padding: 8%;
+    border-radius: 2%;
+    height: 45vh;
+    transform: translateX(-260%);
+    z-index: 5;
+}
+
+.ser-active-par3
+{
+    position: relative;
+    top: 15%;
+    /* left: 15%; */
+    transform: translateX(-220%);
+    z-index: 5;
+}
+
+.aside-form
+{
+    background-color: rgb(33, 25, 58);
+    height: 1000px;
+    width: 99%;
+    margin-bottom: 1.2%;
+    /* margin-left: 1%; */
+    height: 135vh;
+    margin-bottom: 1.2%;
+}
+
+.form-h1
+{
+    font-size: 3rem;
+    position: relative;
+    top: 13%;
+    left: 10%;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.form-h1-2
+{
+    font-size: 3rem;
+    position: relative;
+    top: 7%;
+    left: 53%;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.aside-form>form
+{
+    position: relative;
+    top: 10%;
+    left: 1%;
+}
+
+.aside-form>form>input
+{
+    padding: 1.5%;
+    width: 43%;
+    margin-top: 2%;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+}
+
+.form-message
+{
+    /* padding: 5%; */
+    height: 20vh;
+}
+
+.form-line
+{
+    background-color: white;
+    position: absolute;;
+    height: 103vh;
+    width: .1%;
+    left: 50%;
+    /* top: 10%; */
+    margin-top: 5%;
+}
+
+.form-button
+{
+    background-color: orangered;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.1em;
+    width: 15%;
+    padding: 2%;
+    outline: none;
+    border: none;
+    position: relative;
+    margin-top: 4%;
+    left: 12%;
+    transition: 1s;
+}
+
+.form-button:hover
+{
+    background-color: white;
+    color: orangered;
+    transition: 1s;
+}
+
+.testimonial-par
+{
+    width: 34%;
+    height: 45vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 53%;
+    /* top: 5%; */
+    margin-top: 8%;
+    padding: 4%;
+    line-height: 2em;
+    /* display: none; */
+}
+
+.testi-des
+{
+    color: rgb(137, 135, 135);
+    width: 85%;
+    position: absolute;
+    left: 8%;
+}
+
+
+/* div */
+.img-akash
+{
+    position: absolute;
+    width: 23%;
+    top: 90%;
+    background-color: orangered;
+    height: 20vh;
+    left: 2%;
+}
+
+/* img */
+.akash-img
+{
+    position: absolute;
+    /* margin-top: 10%; */
+    top: 94%;
+    left: 4%;
+    height: 20vh;
+}
+
+.akash
+{
+    position: absolute;
+    top: 103%;
+    left: 30%;
+    color: white;
+}
+
+.csit
+{
+    position: absolute;
+    top: 108%;
+    left: 30%;
+    font-weight: 900;
+    font-size: .9em;
+    color: orangered;
+}
+
+.testimonial-par-active
+{
+    transform: translateX(-150%);
+    transition: 1.5s;
+}
+
+.testimonial-par-active2
+{
+    transition: 2s;
+}
+
+.testimonial-par-active3
+{
+    display: none;
+}
+
+.testimonial-par-active4
+{
+    transform: translateX(150%);
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>About-Zon</title>
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      height: 19vh;
+      width: 100%;
+      /* margin-left: 1.3%; */
+      background-color: rgb(33, 25, 58);
+      margin-bottom: 1.2%;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 900;
+      width: 0;
+      margin-left: 3%;
+      /* margin-top: -0.9%; */
+      cursor: pointer;
+      color: white;
+      position: absolute;
+    }
+
+    .container {
+      width: 65%;
+      position: relative;
+      top: 60%;
+    }
+
+    ul {
+      display: flex;
+      margin-left: 16.5%;
+      margin-top: -4.5%;
+      cursor: pointer;
+      height: 0;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 2.5% 3% 2.5% 3%;
+      height: 45px;
+      position: relative;
+      top: -51px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.9em;
+      font-weight: 900;
+      position: relative;
+      top: 35px;
+      /* font-family: 'Courier New', Courier, monospace; */
+    }
+
+    ul li:hover,
+    .active {
+      background-color: orangered;
+      transition: 0.8s;
+    }
+
+    .icon {
+      height: 40px;
+      width: 35px;
+      margin-left: 100%;
+      cursor: pointer;
+      margin-top: -1%;
+    }
+
+    .aside {
+      top: -0.5%;
+      background-color: orangered;
+      position: absolute;
+      width: 32.7%;
+      left: 67.3%;
+      height: 0;
+      top: 4%;
+    }
+
+    .first-par {
+      position: absolute;
+      /* top: 5%; */
+      left: 20%;
+      width: 0;
+      color: white;
+    }
+
+    .second-par {
+      color: white;
+      position: absolute;
+      /* top: 1.6%; */
+      left: 50%;
+      width: 0;
+    }
+
+    nav {
+      background-color: rgb(33, 25, 58);
+      height: 1000px;
+      width: 99%;
+      color: white;
+      margin-bottom: 1.2%;
+    }
+
+    .about-img {
+      /* background-color: antiquewhite; */
+      width: 45%;
+      height: 95%;
+      margin-left: 10%;
+    }
+
+    .about-img > img {
+      height: 95%;
+      width: 80%;
+      filter: contrast(1.1);
+    }
+
+    .about-cof {
+      position: relative;
+      left: 52%;
+      top: -64%;
+      width: 35%;
+      font-size: 2em;
+      font-weight: 900;
+      /* background-color: antiquewhite; */
+    }
+
+    .about-con {
+      position: relative;
+      left: 52%;
+      top: -60%;
+      width: 38%;
+      font-size: 1.2em;
+      line-height: 1.8em;
+      word-spacing: 0.2em;
+    }
+
+    .btn-3 {
+      position: relative;
+      left: 52%;
+      top: -55%;
+      padding: 1.5%3.5%;
+      background-color: rgb(255, 51, 0);
+      color: white;
+      border: none;
+      font-weight: 900;
+      font-size: 1em;
+    }
+
+    .btn-3:hover {
+      background-color: black;
+      transition: 1.5s;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">ZON</p>
+        <ul>
+          <li><a href="./index.html" id="item" target="_top">HOME</a></li>
+          <li class="active"><a href="./about.html" id="item" target="_top">ABOUT</a></li>
+          <li><a href="./service.html" id="item" target="_top">SERVICE</a></li>
+          <li><a href="./testimonial.html" id="item" target="_top">TESTIMONIAL</a></li>
+          <li><a href="#" id="item" target="_top">BLOG</a></li>
+          <li><a href="#" id="item" target="_top">CONTACT US</a></li>
+        </ul>
+        <!-- <img src="./icons8-search-49.png" alt="icon" class="icon" style="color:#f4f4f5"> -->
+      </div>
+
+      <!-- aside -->
+      <div class="aside">
+        <p class="first-par">9866664445</p>
+
+        <p class="second-par">example@gmai.com</p>
+      </div>
+
+      <!-- <div class="coffee-par">
+         <h1>ZON COFFEE</h1>
+        </div>
+
+        <div class="coffee-des">
+          There are many variations of passages of Loremalteration in some form, by injected humour, or randomised
+        </div>
+        <button class="btn-1">Read more</button>
+        <button class="btn-2">Get a quote</button>
+
+        <img src="./coff_img.png" alt="coffee" class="coffee"> -->
+    </header>
+
+    <nav class="nav-about">
+      <div class="about-img">
+        <img src="./about.png" alt="about-img" />
+      </div>
+
+      <div class="about-cof">
+        <h1>ABOUT ZON COFFEE</h1>
+      </div>
+
+      <div class="about-con">
+        sing 'Content here, content here', making it look like readable English.
+        Many desktop publishing packages and web page editors
+      </div>
+
+      <button class="btn-3">READ MORE</button>
+    </nav>
+
+    <script>
+      const menuItems = document.querySelectorAll("ul li");
+
+      // Loop through each menu item
+      menuItems.forEach((item) => {
+        // Add click event listener to each menu item
+        item.addEventListener("click", () => {
+          item.classList.add("active");
+          // Remove active class from all menu items
+          menuItems.forEach((menuItem) => {
+            menuItem.classList.remove("active");
+            menuItem.style.transition = ".8s";
+          });
+          // Add active class to the clicked menu item
+          item.classList.add("active");
+        //   item.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
